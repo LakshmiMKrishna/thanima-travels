@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Thanima Travels – Explore the Beauty of Kerala</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Floating WhatsApp Button -->
+  <a
+      href="https://wa.me/918129346778?text=Hi%20Thanima%20Travels%2C%20I%27d%20like%20to%20plan%20a%20trip."
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav-container">
+      <!-- LOGO -->
+      <div class="logo">
+        <img src="images/logo.png" alt="Thanima Travels Logo" class="logo-img" />
+        <span class="logo-text">THANIMA <strong>TRAVELS</strong></span>
+      </div>
+
+      <!-- NAV -->
+      <nav>
+        <ul>
+          <li><a href="#services" data-i18n="nav-services">Services</a></li>
+          <li><a href="#gallery" data-i18n="nav-gallery">Gallery</a></li>
+          <li><a href="#enquiry" data-i18n="nav-enquiry">Enquiry</a></li>
+          <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- LANGUAGE SWITCHER -->
+     <div class="language-switcher">
+  <label for="languageSelect" class="language-label">Language</label>
+  <select id="languageSelect" aria-label="Change language">
+    <option value="en">EN</option>
+    <option value="hi">हिन्दी</option>
+    <option value="ml">മലയാളം</option>
+  </select>
+</div>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>THANIMA TRAVELS</h1>
+      <h2 data-i18n="hero-subtitle">Explore the Beauty of Kerala</h2>
+      <p data-i18n="hero-text">Your Gateway to Kerala’s scenic beauty, greenery, traditional cultural arts forms, and traditional cuisine.</p>
+
+      <div class="hero-buttons">
+        <button class="btn-primary" onclick="scrollToSection('enquiry')" data-i18n="hero-book">
+          Book Now
+        </button>
+        <button class="btn-outline" onclick="scrollToSection('services')" data-i18n="hero-view-services">
+          View Our Services
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="section-inner">
+      <h2 class="section-title" data-i18n="services-title">Our Services</h2>
+      <p class="section-subtitle" data-i18n="services-subtitle">
+        Thoughtfully designed experiences across Kerala.
+      </p>
+
+      <div class="services-grid">
+        <!-- Packages -->
+        <div class="service-card">
+          <img src="images/service-packages.jpg" alt="Kerala tour packages" />
+          <div class="service-body">
+            <span class="service-tag" data-i18n="packages-tag">Packages</span>
+            <h3 data-i18n="packages-title">Handpicked Kerala Holiday Packages</h3>
+            <ul>
+              <li data-i18n="packages-b1">Backwater Cruises</li>
+              <li data-i18n="packages-b2">Beach Getaways</li>
+              <li data-i18n="packages-b3">Hill Station Tours</li>
+              <li data-i18n="packages-b4">Cultural Experiences</li>
+              <li data-i18n="packages-b5">Wellness Retreats</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Why Choose Us -->
+        <div class="service-card">
+          <img src="images/service-whyus.jpg" alt="Why choose Thanima Travels" />
+          <div class="service-body">
+            <span class="service-tag" data-i18n="why-tag">Why Choose Us</span>
+            <h3 data-i18n="why-title">Trusted Local Travel Partner</h3>
+            <ul>
+              <li data-i18n="why-b1">Personalized Trips</li>
+              <li data-i18n="why-b2">Local Guides</li>
+              <li data-i18n="why-b3">Reasonable Pricing</li>
+              <li data-i18n="why-b4">Safety &amp; Trustability</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Taxi Services -->
+        <div class="service-card">
+          <img src="images/service-taxi.jpg" alt="Taxi services" />
+          <div class="service-body">
+            <span class="service-tag" data-i18n="taxi-tag">Taxi Services</span>
+            <h3 data-i18n="taxi-title">Comfortable &amp; Reliable Transfers</h3>
+            <ul>
+              <li data-i18n="taxi-b1">Wide Range of Vehicles (Sedan, SUV, MUV, Traveller)</li>
+              <li data-i18n="taxi-b2">Professional Drivers</li>
+              <li data-i18n="taxi-b3">Customised Travel &amp; Sightseeing Services</li>
+              <li data-i18n="taxi-b4">Small Vehicles for Local Sightseeing</li>
+              <li data-i18n="taxi-b5">Ideal for Families, Groups &amp; Corporate Trips</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY / CAROUSEL -->
+  <section id="gallery">
+    <div class="section-inner">
+      <h2 class="section-title" data-i18n="gallery-title">Kerala Highlights</h2>
+      <p class="section-subtitle" data-i18n="gallery-subtitle">
+        A glimpse of the experiences we can craft for you.
+      </p>
+
+      <div class="carousel-wrapper">
+        <div class="carousel" id="carousel">
+          <!-- Slide 1 -->
+          <div class="carousel-slide active">
+            <img src="images/slide1.jpg" alt="Backwater cruise" />
+            <div class="carousel-caption" data-i18n="gallery-caption-1">
+              Serene backwater cruises – unwind on the tranquil waters of Kerala.
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-slide">
+            <img src="images/slide2.jpg" alt="Hill station" />
+            <div class="carousel-caption" data-i18n="gallery-caption-2">
+              Misty hill stations and lush tea gardens for perfect getaways.
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-slide">
+            <img src="images/slide3.jpg" alt="Beach sunset" />
+            <div class="carousel-caption" data-i18n="gallery-caption-3">
+              Golden sunsets and peaceful beaches along the Arabian Sea.
+            </div>
+          </div>
+
+          <div class="carousel-controls">
+            <button class="carousel-btn" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="carousel-btn" onclick="changeSlide(1)">&#10095;</button>
+          </div>
+
+          <div class="carousel-dots" id="carouselDots">
+            <button class="carousel-dot active" onclick="goToSlide(0)"></button>
+            <button class="carousel-dot" onclick="goToSlide(1)"></button>
+            <button class="carousel-dot" onclick="goToSlide(2)"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- GOOGLE REVIEWS -->
+<section id="reviews">
+  <div class="section-inner">
+    <h2 class="section-title">Customer Reviews</h2>
+    <p class="section-subtitle">
+      Real experiences shared by our happy travelers
+    </p>
+
+   <div class="reviews-container">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881741.9321830017!2d73.49428936813104!3d10.538715870673142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41159339d340f71b%3A0x640d6997c4d3530e!2sTHANIMA%20TRAVELS!5e1!3m2!1sen!2sin!4v1769524136196!5m2!1sen!2sin"
+    width="100%"
+    height="450"
+    style="border:0; border-radius:12px;"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+
+    <!-- Add Review Button -->
+    <div style="text-align:center; margin-top:20px;">
+  <a
+    href="https://www.google.com/search?q=thanima+travels+reviews#lrd=0x41159339d340f71b:0x640d6997c4d3530e,3"
+    target="_blank"
+    class="btn-primary">
+    ⭐ Leave a Review on Google
+  </a>
+</div>
+
+  </div>
+</section>
+
+
+
+
+  <!-- ENQUIRY -->
+  <section id="enquiry">
+    <div class="section-inner">
+      <h2 class="section-title" data-i18n="enquiry-title">Trip Enquiry</h2>
+      <p class="section-subtitle" data-i18n="enquiry-subtitle">
+        Share your details and we’ll get back with the best options for you.
+      </p>
+
+      <div class="enquiry-wrapper">
+        <!-- FORM -->
+        <form
+          class="enquiry-form"
+          id="enquiryForm"
+          action="https://formspree.io/f/xrbvbzyz"
+          method="POST"
+        >
+          <h3 data-i18n="enquiry-form-title">Plan Your Kerala Experience</h3>
+          <p data-i18n="enquiry-form-text">
+            Fill in the enquiry form and we’ll contact you with customised itinerary &amp; pricing.
+          </p>
+
+          <!-- Subject for email -->
+          <input type="hidden" name="_subject" value="New Trip Enquiry – Thanima Travels" />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name" data-i18n="label-name">Full Name *</label>
+              <input type="text" id="name" name="fullName" required />
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="label-email">Email *</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone" data-i18n="label-phone">Phone / WhatsApp *</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+            <div class="form-group">
+              <label for="travelType" data-i18n="label-trip">Trip Type</label>
+              <select id="travelType" name="tripType">
+                <option value="" data-i18n="trip-select">Select</option>
+                <option data-i18n="trip-family">Family Holiday</option>
+                <option data-i18n="trip-honeymoon">Honeymoon</option>
+                <option data-i18n="trip-friends">Friends Trip</option>
+                <option data-i18n="trip-corporate">Corporate / Group</option>
+                <option data-i18n="trip-taxi">Taxi Only</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fromDate" data-i18n="label-from">From Date</label>
+              <input type="date" id="fromDate" name="fromDate" />
+            </div>
+            <div class="form-group">
+              <label for="toDate" data-i18n="label-to">To Date</label>
+              <input type="date" id="toDate" name="toDate" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message" data-i18n="label-message">Travel Details / Requirements *</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              placeholder="Number of travellers, preferred places (backwaters, hills, beaches, etc.), pickup location…"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary" data-i18n="btn-send">Send Enquiry</button>
+
+          <!-- Messages -->
+          <p id="formSuccess" style="display:none; color:#2e7d5a; margin-top:10px;" data-i18n="msg-success">
+            ✅ Thank you! Your enquiry has been sent.
+          </p>
+          <p id="formError" style="display:none; color:#c0392b; margin-top:10px;" data-i18n="msg-error">
+            ❌ Something went wrong. Please try again.
+          </p>
+        </form>
+
+        <!-- SIDE INFO -->
+        <div class="enquiry-side" id="contact">
+          <h4 data-i18n="contact-title">Contact Details</h4>
+
+          <div class="info-block">
+            <i class="fas fa-phone"></i>
+            <span><strong data-i18n="contact-phone-label">Phone / WhatsApp:</strong> +91 81293 46778</span>
+          </div>
+
+          <div class="info-block">
+            <i class="fas fa-envelope"></i>
+            <span><strong data-i18n="contact-email-label">Email:</strong> info@thanimatravels.com</span>
+          </div>
+
+          <!-- <div class="info-block">
+            <i class="fas fa-map-marker-alt"></i>
+            <span data-i18n="contact-location">Kerala, India</span>
+          </div> -->
+
+          <p class="tagline" data-i18n="tagline">
+            “Your Gateway to Kerala’s scenic beauty, greenery, traditional cultural arts forms, and traditional cuisine.”
+          </p>
+
+          <p style="margin-top:1rem;" data-i18n="contact-extra">
+            Click the WhatsApp icon at the bottom-right corner for quick chat, or use the enquiry form to
+            send us an email with your trip requirements.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <span data-i18n="footer-1">© <span id="year"></span> Thanima Travels. All rights reserved.</span>
+      <span data-i18n="footer-2">Designed for a smooth, simple and professional travel booking experience.</span>
+    </div>
+  </footer>
+
+  <!-- Inline Script -->
+  <script>
+    // Smooth scroll
+    function scrollToSection(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+
+    // TRANSLATIONS
+    const translations = {
+      en: {
+        "nav-services": "Services",
+        "nav-gallery": "Gallery",
+        "nav-enquiry": "Enquiry",
+        "nav-contact": "Contact",
+
+        "hero-subtitle": "Explore the Beauty of Kerala",
+        "hero-text": "Your Gateway to Kerala’s scenic beauty, greenery, traditional cultural arts forms, and traditional cuisine.",
+        "hero-book": "Book Now",
+        "hero-view-services": "View Our Services",
+
+        "services-title": "Our Services",
+        "services-subtitle": "Thoughtfully designed experiences across Kerala.",
+
+        "packages-tag": "Packages",
+        "packages-title": "Handpicked Kerala Holiday Packages",
+        "packages-b1": "Backwater Cruises",
+        "packages-b2": "Beach Getaways",
+        "packages-b3": "Hill Station Tours",
+        "packages-b4": "Cultural Experiences",
+        "packages-b5": "Wellness Retreats",
+
+        "why-tag": "Why Choose Us",
+        "why-title": "Trusted Local Travel Partner",
+        "why-b1": "Personalized Trips",
+        "why-b2": "Local Guides",
+        "why-b3": "Reasonable Pricing",
+        "why-b4": "Safety & Trustability",
+
+        "taxi-tag": "Taxi Services",
+        "taxi-title": "Comfortable & Reliable Transfers",
+        "taxi-b1": "Wide Range of Vehicles (Sedan, SUV, MUV, Traveller)",
+        "taxi-b2": "Professional Drivers",
+        "taxi-b3": "Customised Travel & Sightseeing Services",
+        "taxi-b4": "Small Vehicles for Local Sightseeing",
+        "taxi-b5": "Ideal for Families, Groups & Corporate Trips",
+
+        "gallery-title": "Kerala Highlights",
+        "gallery-subtitle": "A glimpse of the experiences we can craft for you.",
+        "gallery-caption-1": "Serene backwater cruises – unwind on the tranquil waters of Kerala.",
+        "gallery-caption-2": "Misty hill stations and lush tea gardens for perfect getaways.",
+        "gallery-caption-3": "Golden sunsets and peaceful beaches along the Arabian Sea.",
+
+        "enquiry-title": "Trip Enquiry",
+        "enquiry-subtitle": "Share your details and we’ll get back with the best options for you.",
+        "enquiry-form-title": "Plan Your Kerala Experience",
+        "enquiry-form-text": "Fill in the enquiry form and we’ll contact you with customised itinerary & pricing.",
+
+        "label-name": "Full Name *",
+        "label-email": "Email *",
+        "label-phone": "Phone / WhatsApp *",
+        "label-trip": "Trip Type",
+        "label-from": "From Date",
+        "label-to": "To Date",
+        "label-message": "Travel Details / Requirements *",
+
+        "trip-select": "Select",
+        "trip-family": "Family Holiday",
+        "trip-honeymoon": "Honeymoon",
+        "trip-friends": "Friends Trip",
+        "trip-corporate": "Corporate / Group",
+        "trip-taxi": "Taxi Only",
+
+        "btn-send": "Send Enquiry",
+        "msg-success": "✅ Thank you! Your enquiry has been sent.",
+        "msg-error": "❌ Something went wrong. Please try again.",
+
+        "contact-title": "Contact Details",
+        "contact-phone-label": "Phone / WhatsApp:",
+        "contact-email-label": "Email:",
+        // "contact-location": "Kerala, India",
+        "tagline": "“Your Gateway to Kerala’s scenic beauty, greenery, traditional cultural arts forms, and traditional cuisine.”",
+        "contact-extra": "Click the WhatsApp icon at the bottom-right corner for quick chat, or use the enquiry form to send us an email with your trip requirements.",
+
+        "footer-1": "© " + new Date().getFullYear() + " Thanima Travels. All rights reserved.",
+        "footer-2": "Designed for a smooth, simple and professional travel booking experience."
+      },
+
+      hi: {
+        "nav-services": "सेवाएँ",
+        "nav-gallery": "गैलरी",
+        "nav-enquiry": "पूछताछ",
+        "nav-contact": "संपर्क",
+
+        "hero-subtitle": "केरल की सुंदरता को खोजिए",
+        "hero-text": "केरल की प्राकृतिक सुंदरता, हरियाली, पारंपरिक सांस्कृतिक कला रूपों और पारंपरिक व्यंजनों का आपका प्रवेश द्वार।",
+        "hero-book": "अभी बुक करें",
+        "hero-view-services": "हमारी सेवाएँ देखें",
+
+        "services-title": "हमारी सेवाएँ",
+        "services-subtitle": "केरल में आपके लिए खास तैयार की गई यात्राएँ।",
+
+        "packages-tag": "पैकेज",
+        "packages-title": "चुने हुए केरल हॉलीडे पैकेज",
+        "packages-b1": "बैकवॉटर क्रूज़",
+        "packages-b2": "बीच गेटअवे",
+        "packages-b3": "हिल स्टेशन टूर",
+        "packages-b4": "सांस्कृतिक अनुभव",
+        "packages-b5": "वेलनेस रिट्रीट",
+
+        "why-tag": "क्यों चुनें हमें",
+        "why-title": "विश्वसनीय स्थानीय यात्रा साथी",
+        "why-b1": "आपके लिए पर्सनलाइज़्ड ट्रिप",
+        "why-b2": "स्थानीय गाइड",
+        "why-b3": "उचित और पारदर्शी मूल्य",
+        "why-b4": "सुरक्षा और भरोसेमंद सेवा",
+
+        "taxi-tag": "टैक्सी सेवाएँ",
+        "taxi-title": "आरामदायक और भरोसेमंद ट्रांसफर",
+        "taxi-b1": "सेडान, SUV, MUV, ट्रैवलर सहित बड़ी रेंज",
+        "taxi-b2": "प्रोफेशनल और अनुभवी ड्राइवर",
+        "taxi-b3": "कस्टमाइज्ड ट्रैवल और साइटसीइंग सेवाएँ",
+        "taxi-b4": "लोकल साइटसीइंग के लिए छोटी गाड़ियाँ",
+        "taxi-b5": "परिवार, ग्रुप और कॉर्पोरेट ट्रिप के लिए बेहतरीन",
+
+        "gallery-title": "केरल की झलकियाँ",
+        "gallery-subtitle": "आपके लिए हम जो अनुभव बना सकते हैं, उसकी एक छोटी झलक।",
+        "gallery-caption-1": "केरल की शांत बैकवॉटर क्रूज़ – दिल और दिमाग को सुकून देने वाली यात्रा।",
+        "gallery-caption-2": "कोहरे से ढकी पहाड़ियाँ और चाय के बागान – परफेक्ट हिल स्टेशन गेटअवे।",
+        "gallery-caption-3": "अरब सागर के किनारे सुनहरे सूर्यास्त और शांत बीच।",
+
+        "enquiry-title": "ट्रिप पूछताछ",
+        "enquiry-subtitle": "अपनी जानकारी भेजें, हम आपके लिए सबसे अच्छा विकल्प साझा करेंगे।",
+        "enquiry-form-title": "अपनी केरल यात्रा की योजना बनाएं",
+        "enquiry-form-text": "फॉर्म भरें, हम आपसे कस्टमाइज्ड प्लान और पैकेज डिटेल्स के साथ संपर्क करेंगे।",
+
+        "label-name": "पूरा नाम *",
+        "label-email": "ईमेल *",
+        "label-phone": "फोन / व्हाट्सऐप *",
+        "label-trip": "यात्रा का प्रकार",
+        "label-from": "यात्रा शुरू होने की तारीख",
+        "label-to": "यात्रा समाप्त होने की तारीख",
+        "label-message": "यात्रा विवरण / आवश्यकता *",
+
+        "trip-select": "चुनें",
+        "trip-family": "फैमिली हॉलीडे",
+        "trip-honeymoon": "हनीमून",
+        "trip-friends": "फ्रेंड्स ट्रिप",
+        "trip-corporate": "कॉर्पोरेट / ग्रुप",
+        "trip-taxi": "केवल टैक्सी",
+
+        "btn-send": "पूछताछ भेजें",
+        "msg-success": "✅ धन्यवाद! आपकी पूछताछ हमें मिल गई है।",
+        "msg-error": "❌ कोई समस्या आई। कृपया दोबारा प्रयास करें।",
+
+        "contact-title": "संपर्क विवरण",
+        "contact-phone-label": "फोन / व्हाट्सऐप:",
+        "contact-email-label": "ईमेल:",
+        // "contact-location": "केरल, भारत",
+        "tagline": "“केरल की प्राकृतिक सुंदरता, हरियाली, पारंपरिक सांस्कृतिक कला रूपों और पारंपरिक व्यंजनों का आपका प्रवेश द्वार।”",
+        "contact-extra": "फौरन बात करने के लिए नीचे दाईं तरफ व्हाट्सऐप आइकन पर क्लिक करें, या फॉर्म भरकर हमें अपनी यात्रा की जानकारी भेजें।",
+
+        "footer-1": "© " + new Date().getFullYear() + " Thanima Travels. सर्वाधिकार सुरक्षित।",
+        "footer-2": "सरल, प्रोफेशनल और सुगम यात्रा बुकिंग अनुभव के लिए डिज़ाइन किया गया।"
+      },
+
+      ml: {
+        "nav-services": "സേവനങ്ങൾ",
+        "nav-gallery": "ഗാലറി",
+        "nav-enquiry": "അന്വേഷണം",
+        "nav-contact": "ബന്ധപ്പെടുക",
+
+        "hero-subtitle": "കേരളത്തിന്റെ സൗന്ദര്യം കണ്ടെത്തൂ",
+        "hero-text": "കേരളത്തിന്റെ പ്രകൃതിഭംഗി, പച്ചപ്പ്, പരമ്പരാഗത സാംസ്കാരിക കലാരൂപങ്ങൾ, പരമ്പരാഗത ഭക്ഷണവിഭവങ്ങൾ എന്നിവയിലേക്കുള്ള നിങ്ങളുടെ കവാടം.",
+        "hero-book": "ഇപ്പോൾ ബുക്ക് ചെയ്യൂ",
+        "hero-view-services": "ഞങ്ങളുടെ സേവനങ്ങൾ കാണൂ",
+
+        "services-title": "ഞങ്ങളുടെ സേവനങ്ങൾ",
+        "services-subtitle": "കേരളത്തിലുടനീളം മനോഹരമായി രൂപകൽപ്പന ചെയ്ത യാത്രാനുഭവങ്ങൾ.",
+
+        "packages-tag": "പാക്കേജുകൾ",
+        "packages-title": "തിരഞ്ഞെടുത്ത കേരള ഹോളിഡേ പാക്കേജുകൾ",
+        "packages-b1": "ബാക്ക്‌വാട്ടർ ക്രൂയിസ്",
+        "packages-b2": "ബീച്ച് ഗെറ്റേവേകൾ",
+        "packages-b3": "ഹിൽസ്റ്റേഷന്‍ ടൂറുകൾ",
+        "packages-b4": "സാംസ്കാരിക അനുഭവങ്ങൾ",
+        "packages-b5": "വെൽനെസ് റിട്രീറ്റുകൾ",
+
+        "why-tag": "എന്തുകൊണ്ട് ഞങ്ങൾ?",
+        "why-title": "വിശ്വസനീയമായ ലോക്കൽ ട്രാവൽ പങ്കാളി",
+        "why-b1": "താങ്കൾക്കായി പേഴ്സണലൈസ്ഡ് ട്രിപ്പ്",
+        "why-b2": "ലോക്കൽ ഗൈഡുകൾ",
+        "why-b3": "വ്യക്തമായ, യുക്തിസഹമായ നിരക്കുകൾ",
+        "why-b4": "സുരക്ഷയും വിശ്വാസവും",
+
+        "taxi-tag": "ടാക്സി സേവനങ്ങൾ",
+        "taxi-title": "സൗകര്യപ്രദവും വിശ്വസനീയവും ആയ യാത്രകൾ",
+        "taxi-b1": "സെഡാൻ, SUV, MUV, ട്രാവലർ ഉൾപ്പെടെ വൈവിധ്യമാർന്ന വാഹനങ്ങൾ",
+        "taxi-b2": "പ്രൊഫഷണൽ ഡ്രൈവർമാർ",
+        "taxi-b3": "കസ്റ്റമൈസ്ഡ് ട്രാവൽ & സൈറ്റ്‌സീയിംഗ് സേവനങ്ങൾ",
+        "taxi-b4": "ലോക്കൽ സൈറ്റ്സീയിംഗിനുള്ള ചെറിയ വാഹനങ്ങൾ",
+        "taxi-b5": "കുടുംബങ്ങൾക്കും ഗ്രൂപ്പുകൾക്കും കോർപ്പറേറ്റ് ട്രിപ്പുകൾക്കും അനുയോജ്യം",
+
+        "gallery-title": "കേരള ഹൈലൈറ്റുകൾ",
+        "gallery-subtitle": "നിങ്ങൾക്കായി ഞങ്ങൾ ഒരുക്കുന്ന യാത്രകളുടെ ചില നിമിഷങ്ങൾ.",
+        "gallery-caption-1": "ശാന്തമായ ബാക്ക്‌വാട്ടർ ക്രൂയിസുകൾ – മനസിനെ ശാന്തമാക്കുന്ന കേരള സന്ദർശനം.",
+        "gallery-caption-2": "മൂടൽമഞ്ഞ് മൂടിയ പർവതങ്ങളും ചായതോട്ടങ്ങളും – പർഫെക്റ്റ് ഹിൽസ്റ്റേഷൻ യാത്ര.",
+        "gallery-caption-3": "അറേബ്യൻ കടലോരത്ത് സ്വർണ്ണ നിറത്തിലുള്ള സന്ധ്യാസൂര്യാസ്തമയങ്ങൾ.",
+
+        "enquiry-title": "ട്രിപ്പ് അന്വേഷണം",
+        "enquiry-subtitle": "നിങ്ങളുടെ വിവരങ്ങൾ പങ്കുവെക്കൂ, നിങ്ങൾക്കൊത്ത മികച്ച ഓപ്ഷനുകൾ ഞങ്ങൾ തിരിച്ചറിയാം.",
+        "enquiry-form-title": "നിങ്ങളുടെ കേരള യാത്ര പ്ലാൻ ചെയ്യൂ",
+        "enquiry-form-text": "ഫോം പൂരിപ്പിക്കുക, കസ്റ്റമൈസ്ഡ് ഇറ്റിനററിയുമായി ഞങ്ങൾ നിങ്ങളെ ബന്ധപ്പെടും.",
+
+        "label-name": "പൂർണ്ണ പേര് *",
+        "label-email": "ഇമെയിൽ *",
+        "label-phone": "ഫോൺ / വാട്‌സ്ആപ്പ് *",
+        "label-trip": "ട്രിപ്പ് തരം",
+        "label-from": "തുടങ്ങുന്ന തീയതി",
+        "label-to": "അവസാനിക്കുന്ന തീയതി",
+        "label-message": "യാത്ര വിശദാംശങ്ങൾ / ആവശ്യങ്ങൾ *",
+
+        "trip-select": "തിരഞ്ഞെടുക്കുക",
+        "trip-family": "ഫാമിലി ഹോളിഡേ",
+        "trip-honeymoon": "ഹണിമൂൺ",
+        "trip-friends": "ഫ്രണ്ട്സ് ട്രിപ്പ്",
+        "trip-corporate": "കോർപ്പറേറ്റ് / ഗ്രൂപ്പ്",
+        "trip-taxi": "ടാക്സി മാത്രം",
+
+        "btn-send": "അന്വേഷണം അയക്കൂ",
+        "msg-success": "✅ നന്ദി! നിങ്ങളുടെ അന്വേഷണം ഞങ്ങൾ സ്വീകരിച്ചു.",
+        "msg-error": "❌ എന്തോ പിശക് പറ്റി. ദയവായി വീണ്ടും ശ്രമിക്കൂ.",
+
+        "contact-title": "ബന്ധപ്പെടാനുള്ള വിവരങ്ങൾ",
+        "contact-phone-label": "ഫോൺ / വാട്‌സ്ആപ്പ്:",
+        "contact-email-label": "ഇമെയിൽ:",
+        // "contact-location": "കേരളം, ഇന്ത്യ",
+        "tagline": "“കേരളത്തിന്റെ പ്രകൃതിഭംഗി, പച്ചപ്പ്, പരമ്പരാഗത സാംസ്കാരിക കലാരൂപങ്ങൾ, പരമ്പരാഗത ഭക്ഷണവിഭവങ്ങൾ എന്നിവയിലേക്കുള്ള നിങ്ങളുടെ കവാടം.”",
+        "contact-extra": "വേഗത്തിൽ സംസാരിക്കാൻ വലത് വശത്തെ വാട്‌സ്ആപ്പ് ഐകണിൽ ക്ലിക്ക് ചെയ്യുക, അല്ലെങ്കിൽ ഫോമിലൂടെ നിങ്ങളുടെ യാത്രയുടെ വിശദാംശങ്ങൾ അയക്കുക.",
+
+        "footer-1": "© " + new Date().getFullYear() + " Thanima Travels. എല്ലാ അവകാശവും സംരക്ഷിതം.",
+        "footer-2": "ലളിതവും പ്രൊഫഷണലുമായ യാത്ര ബുക്കിംഗ് അനുഭവത്തിനായി രൂപകല്പന ചെയ്തിരിക്കുന്നു."
+      }
+    };
+
+    document.addEventListener("DOMContentLoaded", function () {
+      // Footer year (for EN default; others overridden by translations)
+      const yearEl = document.getElementById("year");
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+
+      // Carousel
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".carousel-slide");
+      const dots = document.querySelectorAll(".carousel-dot");
+
+      function showSlide(index) {
+        if (!slides.length) return;
+        if (index < 0) index = slides.length - 1;
+        if (index >= slides.length) index = 0;
+        currentSlide = index;
+
+        slides.forEach((s, i) => s.classList.toggle("active", i === currentSlide));
+        dots.forEach((d, i) => d.classList.toggle("active", i === currentSlide));
+      }
+
+      window.changeSlide = function (step) {
+        showSlide(currentSlide + step);
+      };
+
+      window.goToSlide = function (index) {
+        showSlide(index);
+      };
+
+      if (slides.length) {
+        setInterval(() => {
+          showSlide(currentSlide + 1);
+        }, 6000);
+      }
+
+      // Language switching
+      function setLanguage(lang) {
+        const dict = translations[lang] || translations["en"];
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (dict[key]) {
+            el.textContent = dict[key];
+          }
+        });
+
+        // Placeholder translation
+        const msg = document.getElementById("message");
+        if (msg) {
+          if (lang === "hi") {
+            msg.placeholder =
+              "यात्रियों की संख्या, पसंदीदा स्थान (बैकवॉटर, हिल स्टेशन, बीच आदि), पिकअप लोकेशन…";
+          } else if (lang === "ml") {
+            msg.placeholder =
+              "യാത്രക്കാരുടെ എണ്ണം, ഇഷ്ടപ്പെട്ട സ്ഥലങ്ങൾ (ബാക്ക്‌വാട്ടർ, ഹിൽ സ്റ്റേഷൻ, ബീച്ച് തുടങ്ങിയവ), പിക്കപ്പ് ലൊക്കേഷൻ…";
+          } else {
+            msg.placeholder =
+              "Number of travellers, preferred places (backwaters, hills, beaches, etc.), pickup location…";
+          }
+        }
+      }
+
+      const langSelect = document.getElementById("languageSelect");
+      if (langSelect) {
+        langSelect.addEventListener("change", function () {
+          setLanguage(this.value);
+        });
+        setLanguage("en"); // default
+      }
+
+      // Form submission with Formspree + validation
+      const form = document.getElementById("enquiryForm");
+      if (form) {
+        form.addEventListener("submit", async function (e) {
+          const name = document.getElementById("name").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const phone = document.getElementById("phone").value.trim();
+          const message = document.getElementById("message").value.trim();
+
+          if (!name || !email || !phone || !message) {
+            e.preventDefault();
+            alert("Please fill in all mandatory fields (Name, Email, Phone, Requirements).");
+            return;
+          }
+
+          if (!form.checkValidity()) {
+            return;
+          }
+
+          e.preventDefault();
+
+          const btn = form.querySelector("button[type='submit']");
+          const originalText = btn.textContent;
+          btn.disabled = true;
+          btn.textContent = "Sending...";
+
+          const formData = new FormData(form);
+
+          const successMsg = document.getElementById("formSuccess");
+          const errorMsg = document.getElementById("formError");
+
+          try {
+            const response = await fetch(form.action, {
+              method: "POST",
+              body: formData,
+              headers: {
+                Accept: "application/json"
+              }
+            });
+
+            if (response.ok) {
+              if (successMsg) successMsg.style.display = "block";
+              if (errorMsg) errorMsg.style.display = "none";
+              form.reset();
+            } else {
+              if (errorMsg) errorMsg.style.display = "block";
+              if (successMsg) successMsg.style.display = "none";
+            }
+          } catch (err) {
+            if (errorMsg) errorMsg.style.display = "block";
+          } finally {
+            btn.disabled = false;
+            btn.textContent = originalText;
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>
